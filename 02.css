@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+    text-transform: uppercase ;
+    text-decoration:underline dashed coral;
+    /* to apply a single fontstyle but some browsers may not support that font if so the default sryle is applied to it */
+    font-family: cursive;
+
+
+}
+p{
+    text-align:justify;
+    /* to apply multiple styles so that if the brouser dont suport the first it trys the second and so on */
+    font-family: 'Times New Roman', Times, serif;
+    /* distace b/w two lines */
+    line-height: 100px;
+    /* used change the case ,ie uppercase,lowercase
+    capitalize makes the first letter of every word to upprcase */
+    /* none makes it as same as what have been entered */
+    text-transform: capitalize;   
+}
+#aa{
+    font-weight:bold;
+    /* px== pixels */
+    font-size:99px;
+}
+#ss{
+    font-weight: bolder;
+    font-size: 1px;
+}
+#dd{
+    font-weight: lighter;
+}
+#ff{
+    font-weight: normal;
+}
+#gg{
+    font-weight: 900;
+}
+#hh{
+    font-weight: 100;
+}
+/* value can be changed from 100 to 900 */

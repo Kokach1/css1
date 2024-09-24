@@ -1,0 +1,17 @@
+/* notes: display function
+inline- takes only space required by the element
+eg: button,span(idk)
+block- takes full width
+eg: div,h1,h2 
+inline-block - similar to inline but we can set margin and padding (ie for inline elements top margin and pading are absent so this is used so that it can be added)
+none - to remove element from document (ie it is used to remone the elemnt including its space)*/
+div{
+    /* give div properties of inline element */
+    display: inline;
+    background-color: khaki;
+}
+button{
+/* give it the property of a block element  */
+    display: block;
+    background-color: lightseagreen;
+}

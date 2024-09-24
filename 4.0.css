@@ -1,0 +1,31 @@
+div{
+    height: 50px;
+    width: 20vw;
+    background-color: mediumvioletred;
+}
+/* used to make website tailered for each divice */
+/* changes the property inside it when the cirteria placed inside () */
+@media ( width : 600px){
+    div {
+        background-color: gold;
+    }
+}
+/* changes when width is 600 0r above  */
+@media ( min-width : 600px){
+    div {
+        background-color: rgb(24, 185, 164);
+    }
+}
+/* changes when width is 600 0r below  */
+@media ( max-width : 600px){
+    div {
+        background-color: rgb(81, 83, 206);
+    }
+}
+/* note: hyrarkey is based on order (as of here poperty at 600 px will be the last property ) */
+/* for a range (ie from and to) */
+@media (min-width: 500px) and (max-width: 900px){
+    div{
+        border: 40px double black;
+    }
+}

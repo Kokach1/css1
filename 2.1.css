@@ -1,0 +1,94 @@
+/* position property
+static- :default position(top,bottom , left,right,z-index: wont make any differnce)
+relative- element is related to itself
+absolute- positioned relative to its closest positioned ancestor
+fixed- positioned relative to browser
+sticky- positioned based on users scroll position */
+
+
+/* baground size property  
+cover: image will cover the whole area (ie no empty space)
+contain: shows the whole image( empty spaces are filled copy of the image)(this can be avoided "background-repeat:no-repeat")
+auto: image is croped to fill the area */
+/* change the one which has been added im lazy */
+body{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(wallpaper.jpeg); 
+}
+div{
+    height: 100px;
+    width: 100px;
+    background-color: dodgerblue;
+    border: 10px solid blueviolet;
+    display: inline-block;
+}
+#box1{
+    position: static;
+    /* this wont change anything cus its static */
+    top: 0px;
+    /* used to add bakground image if its on the same folder */
+    background-image: url("pk1.jpeg");
+}
+#box2{
+    position: relative;
+    /* positions are changed from its initial position */
+    /* its the the distance from that side */
+    /* negative values can also be assigned (for top, bottom, left,right, z-index) */
+    top: 10px;
+    left: 5px;
+}
+#box6{
+    position: absolute;
+    /* couses it to move relative to its ansistor (in this case its body tag) */
+    bottom: 10px;
+}
+#box3{
+    position: absolute;
+    /* it used for headers and footers if its only shown at ends (not floating) */
+    top: 1000vh; 
+    width: 100vw;
+    right: 0;
+}
+#box4{
+    /* this is one application of it ie its used to make header and footers  */
+    /* itll be always at the point on the wrto screan  */
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 100vw;
+    height: 10px;
+}
+#box5 {
+    /* sticks to the screan when its position is reached and unsticked when reached back */
+    position: sticky;
+    /* top means it sticks when we meat at that point as we scroll down
+    bottom means it will be sticked and will be unsticked when that point is reached as we scroll down  */
+    /* top: 10px; */
+    bottom: 10px;
+}
+/* z-index(desides the element on the front in case of overlap) */
+/* default is like the first one under and latest on the top */
+/* default value of every element is zero assining negative value moves it down and positive brings it to the the top */
+#z1{
+    position: relative;
+    left: 20px;
+    background-color:rgba(225,0,0,1);
+    z-index:0;
+}
+#z3{
+    position: relative;
+    left: -50px;
+    background-color:rgba(0,225,0,1);
+    z-index: 4;
+}
+#z4{
+    position: relative;
+    left: -200px;
+    bottom: 40px;
+    background-color:rgba(0,0,225,1);
+    z-index:-2;
+}
+#z2{
+    z-index: 3;
+}

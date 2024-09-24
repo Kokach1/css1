@@ -1,0 +1,40 @@
+div{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    /* display: inline; */
+    display: inline-block;
+}
+button{
+    background-color: forestgreen;
+}
+#df{
+    /* this makes it invisible including its space it not visible */
+    display: none;
+}
+#jk{
+    /* this only hides the element keaping its space there */
+    visibility: hidden;
+}
+/* alpha channel(rgba)
+its the same as rgb abut with another value "a" it is the amoud of opacity with its vlue varing from 0 to 1 */
+#qw
+{
+    /* max bright  */
+    color: rgba(225,0,0,1);
+}
+#er
+{
+    /* least bright  */
+    /* making it invisible */
+    color: rgba(225,0,0,0);
+}
+#ty
+{
+    /* mid bright  */
+    color: rgba(225,0,0,0.5);
+}
+p{
+  margin: 0px;
+}

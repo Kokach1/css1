@@ -1,0 +1,39 @@
+/* percentage(%)
+size of the element relative to its parent object */
+#one{
+    height: 100px;
+    width: 100px;
+    background-color: mediumvioletred;
+}
+#two{
+    width: 50px;
+    /* ie 80% of the parent block  */
+    height: 80%;
+    background-color: darkslategray;
+}
+/*em
+wrto the font size of the parent and font size of itself in case of other properties like width 
+its the mulple of it ie 5em == 5*the original size*/
+#em1{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 0, 0);
+    font-size: 20px;
+}
+#em2{
+    /* font size of parent * 0.5 (ie 20*0.5==13.5) */
+    font-size: 0.5em;
+     /* size of this font* 8 */
+    width: 8em;
+    background-color: rgb(30, 150, 80);
+}
+/* rem(root wm)
+font size wrto the root element(or the default size of element which have bean created ){idk} */
+/* vh: relative to viewport height (wrto size of the screan)
+vw :relative to viewport width */
+/* its better ig cus it gets adjusted according to the screan   */
+h3{
+    background-color: darksalmon;
+    /* means 50% of the screan width */
+    width:50vw;
+}

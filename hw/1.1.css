@@ -1,0 +1,22 @@
+/* some coders set padding and margine to 0 so that its a clean place to start working with */
+*{
+    padding: 0px;
+    border: 0px;
+    color: antiquewhite ;
+}
+#navbar{
+    height: 60px;
+    background-color:#0f1111 ;
+}
+button{
+    background-color:#f08804;
+}
+#logo{
+    color:#f08804; 
+    font-size: 25px;
+}
+a{
+    margin-right:200px;
+    /* to remove the default undrline added when its linked */
+    text-decoration: none;
+} 

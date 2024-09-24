@@ -1,0 +1,48 @@
+h1{
+    height: 40px;
+    width: 270px;
+    background-color: rgb(230, 127, 31);
+    border-width: 40px;
+    border-style:inset;
+    border-color: darkolivegreen;
+}
+button{
+    border-width: 4px;
+    border-style:groove;
+    height: 40px;
+    width: 270px;
+    /* text aligment property will only align it according to the box not the whole webpage */
+    text-align:left;
+    border-color: rgb(33, 44, 190);
+}
+h2{
+    /* shorthand border */
+    /* its just using border-width,border-style,border-color in a single line */
+    border: 10px double gold ;
+    /* used to adjust the courners of the border(ie its used for making the courners of the border curve)
+    value of it is b/w 1% to 50%
+    1 meanig sharp edges and 50 means circle 
+    px can also can be used but itll only makes its courners round (ie circles canot be formed)*/
+    border-radius: 50%;
+}
+/* pading is the distance of the content from the bourder */
+/* marginr :its the distane b/w each box */
+#asd{
+    border: 10px solid violet;
+    padding-left: 10px;
+    margin-bottom: 6px;
+}
+#fgh{
+    border: 10px solid rgb(40, 52, 163);
+    /* this will apply given value to all the pading(ie bottum,left,top,right) */
+    padding: 10px; 
+    /* this will apply given value to all the margine(ie bottum,left,top,right) */
+    margin: 4px;
+}
+#jkl{
+    border: 10px solid rgb(56, 211, 164);
+    /* top|right|bottom|left(clockwise) */
+    padding : 10px 5px 3px 20px;
+    /* top|right|bottom|left(clockwise) */
+    margin: 7px 8px 4px 3px;
+}  

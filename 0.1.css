@@ -1,0 +1,27 @@
+/* universal selector */
+*{
+    color: chocolate;
+    background-color: darkslategray;
+}
+/* element selector */
+h1{
+    color: darkcyan;
+}
+/* id selector */
+#nameofid1 {
+    color: rgb(216, 179, 16);
+}
+#id2{
+    color: darkgrey;
+}
+/* note: same id name can be given to different elements giving them the same style but its a bad programing practice */
+
+/* class selector */
+.class100{
+    color:orangered;
+}
+/* class selector are used in cases in same style needed to given multiple elements */
+/* similar stuff can be done using comas , */
+h4,h5{
+    color: gold;
+}

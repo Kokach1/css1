@@ -1,0 +1,73 @@
+/* flexbox-direction : row "main axis will be row , from left to right(its the default one)"
+flexbox-direction : row-reverse "main axis will be row , from right to left"
+flexbox-direction : column "same but collum as the main axis"
+flexbox-direction : column-reverse;
+note: size of elements gets adjusted according to the size of the container,but  the size of contents inside of elements are not changed (ie if its larger than the container it will come out) */
+
+/* flex properties */
+/* justify-content "alignnment along the main axis"
+flex-start/flex-end/center/ space-evnly
+flex-wrap
+nowrap/wrap/wrap-reverse
+align-item "alignment along the cross axis"
+align-content "alignment of space between amd around the content" */
+
+body{
+    text-align: center;
+    /* 4:28 */
+}
+div{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid purple;
+}
+#container{
+    width: 800px;
+    height: 200px;
+    /* its used to create the flux box */
+    display: flex;
+    /* cange it to others to see the effects */
+    flex-direction: row-reverse;
+    /* uncomence each to check */
+    /* moves the elements to the end of the main axis */
+    /* justify-content: flex-end; */
+    /* note: row and row-reverse changes the order of the elements */
+    /* its the opposite of flex-end
+    moves the elements to the start of the main axis */
+    /* justify-content: flex-start;  */
+    /* moves all the elements to the center leaving equal space at both ends */
+    /* justify-content: center; */
+    /* the reminig spaces is given around each elements
+    note: space b/w  to elements will be twice of space b/w element and the border(cus space aloted to both elements gets added (ull understand it just give it a look)) */
+    /* justify-content: space-around; */
+    /* all the reminig space is divided b/w all the elements, no space is provided b/w element and the border */
+    /* justify-content: space-between; */
+    /* this provide equal space b/w elements and element and border  */
+    justify-content:space-evenly ;
+    /* aligns elements with respect to the cross axis (axis opposit to the main axis) */
+    /* aligns elements to the center of the cross axis */
+    /* align-items:center; */
+    /* aligns elements to the end of the cross axis */
+    /* align-items: end; */
+    /* aligns elements to the end of the cross axis */
+    /* align-items: start; */
+    /* aligns elements to the end of the cross axis */
+    align-items:safe;
+
+}
+#box1{
+    background-color: aquamarine;
+}
+#box2{
+    background-color: rgb(182, 43, 38);
+}
+#box3{
+    background-color: rgb(29, 207, 68);
+}
+#box4{
+    background-color: rgb(236, 221, 12);
+}
+#box5{
+    background-color: rgb(23, 46, 255);
+}

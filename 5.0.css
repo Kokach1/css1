@@ -1,0 +1,17 @@
+div{
+    height: 100px;
+    width: 100px; 
+    background-color: darkorchid;
+    border: 4px dotted royalblue;
+} 
+/* changes the property when the curser howers over it */
+div:hover{
+    background-color: crimson;
+    width: 50px;
+}
+changes the proprtyes when u clicks on it 
+button:active{
+    background-color: chocolate;
+}
+/* transition */
+/* enables u to define the transition b/w two state of elements */
