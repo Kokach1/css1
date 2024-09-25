@@ -3,11 +3,20 @@ div{
     width: 100px; 
     background-color: darkorchid;
     border: 4px dotted royalblue;
+    placing it here makes the tansition 
+     /* applys transition to all properties  */
+     transition-property: width: 30px;;
+     /* discribes the amound of time it takes for the trensition */
+     transition-duration: 5s;
 } 
 /* changes the property when the curser howers over it */
 div:hover{
     background-color: crimson;
     width: 50px;
+   /*  applys transition to all properties 
+   transition-property: all;
+   /* discribes the amound of time it takes for the trensition */
+   transition-duration: 5s; */
 }
 changes the proprtyes when u clicks on it 
 button:active{
