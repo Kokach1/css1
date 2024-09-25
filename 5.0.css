@@ -3,9 +3,9 @@ div{
     width: 100px; 
     background-color: darkorchid;
     border: 4px dotted royalblue;
-    placing it here makes the tansition 
+    /* placing it here makes the tansition take time even to get back to its original state */
      /* applys transition to all properties  */
-     transition-property: width: 30px;;
+     transition-property: all;
      /* discribes the amound of time it takes for the trensition */
      transition-duration: 5s;
 } 
@@ -13,10 +13,9 @@ div{
 div:hover{
     background-color: crimson;
     width: 50px;
-   /*  applys transition to all properties 
-   transition-property: all;
+   /* if we put it in here only going back to the original state will be instant */
    /* discribes the amound of time it takes for the trensition */
-   transition-duration: 5s; */
+   /* transition-duration: 5s;  */
 }
 changes the proprtyes when u clicks on it 
 button:active{
