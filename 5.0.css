@@ -4,10 +4,27 @@ div{
     background-color: darkorchid;
     border: 4px dotted royalblue;
     /* placing it here makes the tansition take time even to get back to its original state */
-     /* applys transition to all properties  */
-     transition-property: all;
-     /* discribes the amound of time it takes for the trensition */
-     transition-duration: 5s;
+    /* applys transition to all properties  */
+    transition-property: all;
+    /* discribes the amound of time it takes for the trensition */
+    transition-duration: 5s;
+    
+    /* it explains the way of transition */
+    /* slow in starting  */
+    /* transition-timing-function: ease-in; */
+    /* slow in ending  */
+    /* transition-timing-function: ease-out; */
+    /* slow in starting and ending */
+    /* transition-timing-function: ease-in-out; */
+    /* moves linerly(i dont realy understood) */
+    /* transition-timing-function: linear; */
+    /* chanes in steps givrn in() */
+    /* transition-timing-function: steps(3); */
+    /*(allows us to controll transition like a pro) An author-defined cubic-Bezier curve, where the p1 and p3 values must be in the range of 0 to 1. */
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    /* time taken to start the transition */
+    transition-delay: 2s;
 } 
 /* changes the property when the curser howers over it */
 div:hover{
