@@ -5,7 +5,7 @@ div{
     top: 100px;
     left: 100px;
     position: absolute;
-
+    /* it rotates the container the given degeri
+    note: the content in it is also rotated */
     transform:rotate(45deg)
 }
-5:01
