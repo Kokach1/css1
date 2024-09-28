@@ -8,9 +8,18 @@ div{
     /* it rotates the container the given degeri
     note: the content in it is also rotated */
     transform:rotate(45deg)
+
+    /* scales the object in all axis  */
+    scale(2)
 }
 /* learn 3d objects from some where else */
 button{
     background-color: darkslategrey;
+    /* z is the normal rotation and the z,y,x can be included to rotate in that axis */
     rotate: x 50deg;
+    /* check the image "xyz.png" */
+    /* scales in x,y axis */
+    /* transform: scale(1,2) ; */
+    /* individual scaling can be done by  */
+    transform: scaley(10) ;
 }
