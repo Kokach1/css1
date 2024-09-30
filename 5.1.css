@@ -21,5 +21,24 @@ button{
     /* scales in x,y axis */
     /* transform: scale(1,2) ; */
     /* individual scaling can be done by  */
-    transform: scaley(10) ;
+    transform: scale y(10) ;
+}
+button:hover{
+    transform: rotate(90deg);
+    /* moves the thing from center in both x,y direction at the same time*/
+    transform: translate(20px,30px);
+    
+
+}
+/* translate: used to move the object in differnt ways */
+h3{
+    background-color: indianred;
+    /* moves the thing from center */
+    transform: translate(20px);
+}
+h1{
+    width: 400px;
+    background-color: lightyellow;
+    /* kida like ittalics pulls the top left and bottom right */
+    transform: skew(40deg);
 }
